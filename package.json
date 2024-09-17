@@ -1,0 +1,41 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "beautiful": "prettier --single-quote --trailing-comma all --write 'src/**/*.{js, json, scss}'",
+    "start": "nodemon ./src/index.js",
+    "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinTuan214/NodeJS.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MinTuan214/NodeJS/issues"
+  },
+  "homepage": "https://github.com/MinTuan214/NodeJS#readme",
+  "dependencies": {
+    "express": "^4.21.0",
+    "express-handlebars": "^8.0.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.6.2",
+    "mongoose-slug-generator": "^1.0.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "handlebars": "^4.7.8",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "sass": "^1.78.0"
+  }
+}

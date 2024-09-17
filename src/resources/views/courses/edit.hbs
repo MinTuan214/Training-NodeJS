@@ -1,0 +1,18 @@
+<div class="container mt-4 mb-4">
+    <h1> Cap nhat khoa hoc </h1>
+    <form action="/courses/{{course._id}}?_method=put" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Ten khoa hoc</label>
+            <input type="text" class="form-control" value="{{course.name}}" id="name" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Mo ta khoa hoc</label>
+            <input type="text" class="form-control" value="{{course.description}}" id="description" name="description">
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Link hinh anh</label>
+            <input type="text" class="form-control" value="{{course.image}}" id="image" name="image">
+        </div>
+        <input type="submit" class="btn btn-primary" value="Sua">
+    </form>
+</div>
